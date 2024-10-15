@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/general.css" />
     <link rel="stylesheet" href="./styles/index.css" />
 </head>
 
@@ -12,328 +13,235 @@
     <div class="main">
         <div class="slider-heading">
             <div class="content-heading">
-                <img src="./assets/img/ロゴ.png" alt="image footer">
+                <img src="./assets/img/img-mainPage/ロゴ.png" alt="image footer">
             </div>
         </div>
 
         <p class="sub-title">ベトナム企業一覧</p>
-        <div class="section section1">
-            <div class="form-box">
-                <div class="form">
-                    <div class="form-group">
-                        <label class="form-label for=">■ 業種</label>
-                        <input type=" text" class="form-input" placeholder="選択してください" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label" for="">■ 地域</label>
-                        <input type="text" class="form-input" placeholder="選択してください" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label for=">■ 掲載目的</label>
-                            <input
-                                type=" text" class="form-input" placeholder="選択してください" />
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label for=">■ キーワード</label>
-                            <input
-                                type=" text" class="form-input" placeholder="キーワードを入力する" />
-                    </div>
 
-                </div>
-                <div class="form-btn">
-                    <button class="btn">
-                        <div>検　索（18件）</div>
-                    </button>
-                    <label class="bottom-form-label">検索条件をクリア</label>
-                </div>
-            </div>
-        </div>
+        <div class="container">
+            <div class="section">
+                <div class="form-box">
+                    <div class="form ">
+                        <div class="form-group">
+                            <label class="form-label for=">■ 業種</label>
+                            <div class="selection-dropdown-box">
+                                <input type=" text" class="form-input" placeholder="" />
+                                <div class="dropdown-selection">
+                                    <div>医療機器</div>
+                                    <img src="./assets/img/img-mainPage/x-circle.png" alt="">
+                                </div>
+                            </div>
 
-        <div class="pagination-container">
-            <div class="pagination-box">
-                <button class="pagination-btn">
-                    <svg class="left-arrow arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg></button>
-                <button class="pagination-btn active">1</button>
-                <button class="pagination-btn">2</button>
-                <button class="pagination-btn">3</button>
-                <button class="pagination-btn">4</button>
-                <span class="pagination-ellipsis">...</span>
-                <button class="pagination-btn">97</button>
-                <button class="pagination-btn">98</button>
-                <button class="pagination-btn">99</button>
-                <button class="pagination-btn">100</button>
-                <button class="pagination-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polyline points="9 6 15 12 9 18"></polyline>
-                    </svg></button>
-            </div>
-            <p class="text-pagination">1～30件を表示（全1,920件中)</p>
-        </div>
-
-        <!-- section 1 -->
-        <div class="section section2">
-            <div class="heading">
-                <p class="new-label">NEW</p>
-                <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
-            </div>
-            <div class="divider"></div>
-            <div class="main-content-box">
-                <div class="left-column">
-                    <img src="./assets/img/cd323f8c123fe867936522033f11f477.jpg" alt="">
-                    <div class="btn-common">
-                        <!-- h1 -->
-                        <img width="19.21" height="19.2" src="./assets/img/dashicons_food.png" alt="icon food">
-                        <p>飲食店・食品</p>
-                    </div>
-                </div>
-                <div class="right-column">
-                    <div class="list-title">
-
-                        <p class="item-product">カフェ</p>
-
-                        <p class="item-product">フランチャイズ</p>
-
-                        <p class="item-product">菓子製造販売</p>
-
-                    </div>
-
-                    <h1>Tr'Đin product company（社名)</h1>
-
-                    <div class="divider-dashed"></div>
-
-                    <h1 class="main-text">ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
-
-                    <div class="option">
-                        <div class="btn-common left">
-                            <p>地域</p>
                         </div>
-                        <div class="btn-common right">
-                            <p>掲載目的</p>
+                        <div class="form-group">
+                            <label class="form-label" for="">■ 地域</label>
+                            <input type="text" class="form-input" placeholder="選択してください" />
                         </div>
-                        <p>ホーチミン市</p>
-                        <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
+                        <div class="form-group">
+                            <label class="form-label for=">■ 掲載目的</label>
+                            <input type=" text" class="form-input" placeholder="選択してください" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label for=">■ キーワード</label>
+                            <input type=" text" class="form-input" placeholder="キーワードを入力する" />
+                        </div>
 
                     </div>
-                    <p class="sub-btn">
-                        ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
-                    </p>
+                    <div class="form-btn">
+                        <button class="btn">
+                            <div>検　索（18件）</div>
+                        </button>
+                        <label class="bottom-form-label">検索条件をクリア</label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-
-        <!-- section 2 -->
-        <div class="section section3">
-            <div class="heading">
-                <p class="new-label">NEW</p>
-                <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
-            </div>
-            <div class="divider"></div>
-            <div class="main-content-box">
-                <div class="left-column">
-                    <img src="./assets/img/cd323f8c123fe867936522033f11f477.jpg" alt="">
-                    <div class="btn-common">
-                        <!-- h1 -->
-                        <img width="19.21" height="19.2" src="./assets/img/dashicons_food.png" alt="icon food">
-                        <p>飲食店・食品</p>
-                    </div>
+            <div class="pagination-container">
+                <div class="pagination-box">
+                    <button class="pagination-btn">
+                        <svg class="left-arrow arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg></button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">4</button>
+                    <span class="pagination-ellipsis">...</span>
+                    <button class="pagination-btn">97</button>
+                    <button class="pagination-btn">98</button>
+                    <button class="pagination-btn">99</button>
+                    <button class="pagination-btn">100</button>
+                    <button class="pagination-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="9 6 15 12 9 18"></polyline>
+                        </svg></button>
                 </div>
-                <div class="right-column">
-                    <div class="list-title">
+                <p class="text-pagination">1～30件を表示（全1,920件中)</p>
+            </div>
 
-                        <p class="item-product">カフェ</p>
-
-                        <p class="item-product">フランチャイズ</p>
-
-                        <p class="item-product">菓子製造販売</p>
-
-                    </div>
-
-                    <h1>Tr'Đin product company（社名)</h1>
-
-                    <div class="divider-dashed"></div>
-
-                    <h1 class="main-text">ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
-
-                    <div class="option">
-                        <div class="btn-common left">
-                            <p>地域</p>
-                        </div>
-                        <div class="btn-common right">
-                            <p>掲載目的</p>
-                        </div>
-                        <p>ホーチミン市</p>
-                        <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
-
-                    </div>
-                    <p class="sub-btn">
-                        ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
-                    </p>
+            <!-- section-item 1 -->
+            <div class="section-item">
+                <div class="heading">
+                    <p class="new-label">NEW</p>
+                    <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
                 </div>
-            </div>
-        </div>
-        <!-- <div class="section">
-            <div class="heading">
-                <p class="new-label">NEW</p>
-                <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
-            </div>
-            <div class="divider"></div>
-            <div class="main-content-box">
-                <div class="left-column">
-                    <img src="./assets/img/cd323f8c123fe867936522033f11f477.jpg" alt="">
-                    <div class="btn-common">
-                        <p>
-                            <img width="19.21" height="19.2" src="./assets/img/dashicons_food.png" alt="icon food">
+                <div class="divider"></div>
+                <div class="main-content-box">
+                    <div class="left-column">
+                        <img src="./assets/img/img-mainPage/cd323f8c123fe867936522033f11f477.jpg" alt="">
+                        <div class="btn-common">
+                            <img width="19.21" height="19.2" src="./assets/img/img-mainPage/dashicons_food.png"
+                                alt="icon food">
+                            <p>飲食店・食品</p>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="list-title">
+
+                            <p class="item-product">カフェ</p>
+
+                            <p class="item-product">フランチャイズ</p>
+
+                            <p class="item-product">菓子製造販売</p>
+
+                        </div>
+
+                        <h1>Tr'Đin product company（社名)</h1>
+
+                        <div class="divider-dashed"></div>
+
+                        <h1 class="main-text">ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
+
+                        <div class="option">
+                            <div class="btn-common left">
+                                <p>地域</p>
+                            </div>
+                            <div class="btn-common right">
+                                <p>掲載目的</p>
+                            </div>
+                            <p>ホーチミン市</p>
+                            <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
+                        </div>
+                        <p class="sub-btn">
+                            ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
                         </p>
-                        <p>飲食店・食品</p>
                     </div>
-                </div>
-                <div class="right-column">
-                    <div class="list-title">
-
-                        <p class="item-product">カフェ</p>
-
-                        <p class="item-product">フランチャイズ</p>
-
-                        <p class="item-product">菓子製造販売</p>
-
-                    </div>
-
-                    <h1>Tr'Đin product company（社名)</h1>
-
-                    <div class="divider-dashed"></div>
-
-                    <h1>ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
-
-                    <div class="option">
-                        <div class="btn-common left">
-                            <p>地域</p>
-                        </div>
-                        <div class="btn-common right">
-                            <p>掲載目的</p>
-                        </div>
-                        <p>ホーチミン市</p>
-                        <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
-
-                    </div>
-                    <p class="sub-btn">
-                        ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
-                    </p>
                 </div>
             </div>
-        </div> -->
 
-        <!-- section 3 -->
-        <div class="section section4">
-            <div class="heading">
-                <p class="new-label">NEW</p>
-                <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
-            </div>
-            <div class="divider"></div>
-            <div class="main-content-box">
-                <div class="left-column">
-                    <img src="./assets/img/cd323f8c123fe867936522033f11f477.jpg" alt="">
-                    <div class="btn-common">
-                        <!-- h1 -->
-                        <img width="19.21" height="19.2" src="./assets/img/dashicons_food.png" alt="icon food">
-                        <p>飲食店・食品</p>
+
+            <!-- section-item-item 2 -->
+            <div class="section-item">
+                <div class="heading">
+                    <p class="new-label">NEW</p>
+                    <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
+                </div>
+                <div class="divider"></div>
+                <div class="main-content-box">
+                    <div class="left-column">
+                        <img src="./assets/img/img-mainPage/cd323f8c123fe867936522033f11f477.jpg" alt="">
+                        <div class="btn-common">
+                            <img width="19.21" height="19.2" src="./assets/img/img-mainPage/dashicons_food.png"
+                                alt="icon food">
+                            <p>飲食店・食品</p>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="list-title">
+
+                            <p class="item-product">カフェ</p>
+
+                            <p class="item-product">フランチャイズ</p>
+
+                            <p class="item-product">菓子製造販売</p>
+
+                        </div>
+
+                        <h1>Tr'Đin product company（社名)</h1>
+
+                        <div class="divider-dashed"></div>
+
+                        <h1 class="main-text">ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
+
+                        <div class="option">
+                            <div class="btn-common left">
+                                <p>地域</p>
+                            </div>
+                            <div class="btn-common right">
+                                <p>掲載目的</p>
+                            </div>
+                            <p>ホーチミン市</p>
+                            <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
+
+                        </div>
+                        <p class="sub-btn">
+                            ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
+                        </p>
                     </div>
                 </div>
-                <div class="right-column">
-                    <div class="list-title">
+            </div>
 
-                        <p class="item-product">カフェ</p>
 
-                        <p class="item-product">フランチャイズ</p>
-
-                        <p class="item-product">菓子製造販売</p>
-
-                    </div>
-
-                    <h1>Tr'Đin product company（社名)</h1>
-
-                    <div class="divider-dashed"></div>
-
-                    <h1 class="main-text">ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
-
-                    <div class="option">
-                        <div class="btn-common left">
-                            <p>地域</p>
+            <!-- section-item 3 -->
+            <div class="section-item">
+                <div class="heading">
+                    <p class="new-label">NEW</p>
+                    <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
+                </div>
+                <div class="divider"></div>
+                <div class="main-content-box">
+                    <div class="left-column">
+                        <img src="./assets/img/img-mainPage/cd323f8c123fe867936522033f11f477.jpg" alt="">
+                        <div class="btn-common">
+                            <img width="19.21" height="19.2" src="./assets/img/img-mainPage/dashicons_food.png"
+                                alt="icon food">
+                            <p>飲食店・食品</p>
                         </div>
-                        <div class="btn-common right">
-                            <p>掲載目的</p>
-                        </div>
-                        <p>ホーチミン市</p>
-                        <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
-
                     </div>
-                    <p class="sub-btn">
-                        ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
-                    </p>
+                    <div class="right-column">
+                        <div class="list-title">
+
+                            <p class="item-product">カフェ</p>
+
+                            <p class="item-product">フランチャイズ</p>
+
+                            <p class="item-product">菓子製造販売</p>
+
+                        </div>
+
+                        <h1>Tr'Đin product company（社名)</h1>
+
+                        <div class="divider-dashed"></div>
+
+                        <h1 class="main-text">ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
+
+                        <div class="option">
+                            <div class="btn-common left">
+                                <p>地域</p>
+                            </div>
+                            <div class="btn-common right">
+                                <p>掲載目的</p>
+                            </div>
+                            <p>ホーチミン市</p>
+                            <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
+
+                        </div>
+                        <p class="sub-btn">
+                            ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="section">
-            <div class="heading">
-                <p class="new-label">New</p>
-                <p>企業No.25697｜閲覧数：934｜公開日：2023.03.20</p>
-            </div>
-            <div class="divider"></div>
-            <div class="main-content-box">
-                <div class="left-column">
-                    <img src="./assets/img/cd323f8c123fe867936522033f11f477.jpg" alt="image box">
-                    <div class="btn-common">
-                        <p>
-                            P1
-                        </p>
-                        <p>飲食店・食品</p>
-                    </div>
-                </div>
-                <div class="right-column">
-                    <div class="list-title">
 
-                        <p class="item-product">カフェ</p>
-
-                        <p class="item-product">フランチャイズ</p>
-
-                        <p class="item-product">菓子製造販売</p>
-
-                    </div>
-
-                    <h1>Tr'Đin product company（社名</h1>
-
-                    <div class="divider-dashed"></div>
-
-                    <h1>ここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトルが入りますここにタイトル</h1>
-
-                    <div class="option">
-                        <div class="btn-common left">
-                            <p>地域</p>
-                        </div>
-                        <div class="btn-common right">
-                            <p>掲載目的</p>
-                        </div>
-                        <p>ホーチミン市</p>
-                        <p>資本提携｜業務提携｜顧客開拓｜人脈作り</p>
-
-                    </div>
-                    <p class="sub-btn">
-                        ここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して挿入しますここに本文を抜粋して…
-                    </p>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- section 4 -->
+        <!-- footer -->
         <div class="footer-section">
             <h1 class="sub-title">1ページに最大30件表示</h1>
         </div>
-
         <div class="pagination-box">
             <button class="pagination-btn">
                 <svg class="left-arrow arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -360,7 +268,7 @@
     </div>
     <div class="slider-footer relative">
         <div class="slide-footer-content">
-            <img class="imgage" src="./assets/img/ロゴ.png" alt="image footer">
+            <img class="imgage" src="./assets/img/img-mainPage/ロゴ.png" alt="image footer">
             <p class="sub-footer">Copyright © 2023 THE BRIDGE All Rights Reserved</p>
         </div>
     </div>

@@ -1,0 +1,336 @@
+section {
+    margin: 20px auto;
+    width: 1200px;
+}
+
+.section-item .heading p {
+    font-size: var(--size-sm);
+    line-height: 22.4px;
+    font-weight: var(--font-weight-normal);
+}
+
+.section-item .heading p:nth-child(2) {
+    background: var(--primary-blue-color);
+    line-height: 22.4px;
+    padding: 7px 9px;
+    font-size: var(--size-sm);
+    color: var(--white-color);
+    font-weight: var(--font-weight-normal);
+    min-width: 180px;
+    text-align: center;
+}
+
+.section-item.pad {
+    padding-top: 30px;
+}
+
+.section-item .description-content {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 33.6px;
+    font-weight: var(--font-weight-xl);
+    font-size: var(--size-md);
+}
+
+.section-item .description-content h2 {
+}
+
+.section .description-content p {
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 62px;
+}
+
+.arrow img {
+    height: auto;
+}
+
+.left-arrow {
+    position: absolute;
+    left: -120px;
+    top: 245px;
+}
+
+.right-arrow {
+    position: absolute;
+    right: -120px;
+    top: 245px;
+}
+
+.main-image-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.main-image {
+    width: 996px;
+    height: 560px;
+    object-fit: none;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 165, 0, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-info {
+    width: 1200px;
+    min-height: 414px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+    overflow: hidden; 
+    margin-top: 42px;
+}
+
+.company-header {
+    background-color: rgba(77, 167, 222, 1);
+    color: var(--black-color);
+    padding: 20px 30px 19px 40px;
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-xl);
+    font-size: var(--size-md);
+    line-height: 33.6px;
+}
+
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--size-mm);
+    line-height: 25.2px;
+}
+
+.company-table td,
+th {
+    width: 87px;
+    padding: 15px 0px 16px 40px;
+    border-bottom: 1px solid rgba(77, 167, 222, 1);
+}
+
+.company-table td + td,
+.company-table th + td {
+    border-left: 1px solid #ccc;
+}
+
+.company-table tr:last-child td {
+    border-bottom: none;
+}
+
+.company-table th:first-child,
+.company-table td:first-child {
+    border-left: none;
+}
+
+.company-table td:first-child {
+    background-color: rgba(77, 167, 222, 0.3);
+}
+
+.company-table a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+h3.heading {
+    background-color: #3399ff;
+    color: var(--black-color);
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 19px 30px 19px 40px;
+    font-weight: var(--font-weight-xl);
+    font-size: var(--size-md);
+    line-height: 33.6px;
+}
+
+.business-overview {
+    margin-top: 32px;
+    background-color: #ffffff;
+    width: 1200px;
+    min-height: 247px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+}
+
+.business-overview p:first-of-type {
+    padding: 40px 30px 40px 40px;
+    line-height: 33.2px;
+    font-size: var(--size-mm);
+    font-weight: var(--font-weight-normal);
+}
+
+.partners {
+    margin-top: 29px;
+    width: 1200px;
+    min-height: 352px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+}
+
+.partners-content {
+    padding: 31px 30px 39px 11px;
+}
+
+.partners-content .title span:first-child {
+    margin-right: 4px;
+}
+
+.partners-content > ul {
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.partners-content > ul ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.partners-content > ul ul .title-content {
+    margin-bottom: 13px;
+    letter-spacing: 2.1px;
+}
+
+.partners-content ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.btn.width {
+    width: 468px;
+    padding: 3px 0px 9px 165px;
+}
+
+.product-section {
+    width: 1200px;
+    min-height: 650px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+}
+
+.product-carousel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 133px;
+}
+
+.product-card {
+    width: 293px;
+    min-height: 446px;
+    text-align: left;
+    background-color: #efefef;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.product-card .product-content {
+    padding: 20px 14px;
+}
+
+.product-card .title-content {
+    font-weight: var(--font-weight-xl);
+    font-size: var(--size-mm);
+    line-height: 25.2px;
+}
+
+.product-card .description-content {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--size-sm);
+    line-height: 22.4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card .sub-content {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--size-s);
+}
+
+.product-card > img {
+    display: block;
+    width: 258px;
+    height: 258px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 178px;
+}
+
+.product-card .btn-common img {
+    width: 19.21px;
+    height: 19.2px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.product-card .btn-common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-blue-color);
+    color: var(--white-color);
+    padding: 7px 9px;
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+    column-gap: 5px;
+}
+
+.product-section .left-arrow-carousel {
+    position: absolute;
+    top: 224px;
+    right: 32px;
+}
+
+.product-section .right-arrow-carousel {
+    position: absolute;
+    top: 224px;
+    left: 32px;
+}
+
+.dots {
+    position: absolute;
+    right: 521px;
+    bottom: -18px;
+    display: flex;
+    gap: 15px;
+}
+
+.dot {
+    width: 20px;
+    min-height: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: orange;
+}
+
+.divider {
+    width: 1120px;
+    height: 3px;
+    background: var(--primary-blue-color);
+    margin: 15px 0;
+}

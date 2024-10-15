@@ -1,0 +1,142 @@
+@import url(./form/index.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+:root {
+    /** Color */
+    --primary-yellow-color: #eba520;
+    --primary-blue-color: #4da7de;
+    --black-color: black;
+    --white-color: white;
+    --primary-gray-color: #aaaaaa;
+
+    --primary-font: "Noto Sans JP", sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-md: 500;
+    --font-weight-lg: 600;
+    --font-weight-xl: 700;
+
+    /** Basic Size */
+    --size-xs: 8px;
+    --size-ss: 12px;
+    --size-s: 14px;
+    --size-sm: 16px;
+    --size-mm: 18px;
+    --size-md: 24px;
+    --size-lg: 32px;
+    --size-xl: 36px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #efefef;
+    /* margin-top: -15px; */
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-heading {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: var(--white-color);
+}
+
+.slider-heading .content-heading {
+}
+
+.slider-heading .content-heading img {
+    position: absolute;
+    left: 161px;
+    top: 25px;
+    width: 126.2px;
+    height: 50px;
+}
+
+.container {
+    width: 1200px;
+}
+
+.section-item {
+    padding: 20px 0;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-start;
+    background: white;
+    border-radius: 8px;
+    padding: 38px 2rem 38px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
+}
+
+.section-item .heading {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+.new-label {
+    background: var(--primary-yellow-color);
+    font-weight: var(--font-weight-normal);
+    padding: 4px 9px;
+    color: var(--white-color);
+    font-size: var(--size-sm);
+    width: 56px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider-footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+    background-color: var(--white-color);
+    margin-top: 79px;
+}
+
+.slider-footer .slide-footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.slider-footer .slide-footer-content img {
+    width: 176.68;
+    height: 70px;
+}
+
+.sub-footer {
+    position: absolute;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--size-ss);
+    line-height: 16px;
+    text-align: center;
+    bottom: 30px;
+    left: 620px;
+}

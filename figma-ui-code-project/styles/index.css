@@ -1,116 +1,15 @@
-@import url(./container/index.css);
-@import url(./form/index.css);
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
-
-:root {
-    /** Color */
-    --primary-yellow-color: #eba520;
-    --primary-blue-color: #4da7de;
-    --black-color: black;
-    --white-color: white;
-    --primary-gray-color: #aaaaaa;
-
-    --primary-font: "Noto Sans JP", sans-serif;
-
-    --font-weight-normal: 400;
-    --font-weight-md: 500;
-    --font-weight-lg: 600;
-    --font-weight-xl: 700;
-
-    /** Basic Size */
-    --size-xs: 8px;
-    --size-ss: 12px;
-    --size-s: 14px;
-    --size-sm: 16px;
-    --size-mm: 18px;
-    --size-md: 24px;
-    --size-lg: 32px;
-    --size-xl: 36px;
+.container {
+    width: 1200px;
 }
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--primary-font);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #efefef;
-}
-
-.main {
-    width: 100%;
-}
-
 .section {
-    width: 100%;
-    min-height: 508px;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     background: white;
     border-radius: 8px;
-    margin-top: 27px;
-    margin-bottom: 28px;
-    padding: 0px 2rem;
-    padding-top: 36px;
-    width: 1200px;
+    padding: 0 2rem;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000033;
-}
-
-.section1 {
-    min-height: 369px;
-    margin-top: 19px;
-    padding-top: 36px;
-}
-
-.section2 {
-    padding-top: 33px;
-    min-height: 508px;
-    margin-bottom: 7px;
-}
-
-.section3 {
-    min-height: 508px;
-    padding-top: 31px;
-    margin-bottom: 7px;
-
-}
-
-.section4 {
-    min-height: 508px;
-    padding-top: 29px;
-    margin-bottom: 7px;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider-heading {
-    position: relative;
-    width: 100%;
-    height: 100px;  
-    background-color: var(--white-color);
-}
-
-.slider-heading .content-heading {
-}
-
-.slider-heading .content-heading img {
-    position: absolute;
-    left: 161px;
-    top: 25px;
-    width: 126.2px;
-    height: 50px;
 }
 
 .sub-title {
@@ -125,7 +24,7 @@ body {
 }
 
 .pagination-container {
-    margin-top: 5px;
+    margin-top: -5px;
     margin-left: 1px;
     margin-bottom: 3px;
     display: flex;
@@ -136,7 +35,6 @@ body {
 
 .pagination-box {
     width: 622px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +43,7 @@ body {
 
 .pagination-box .pagination-btn {
     width: 40px;
-    height: 40px;
+    padding: 8px 0;
     background: var(--white-color);
     color: var(--primary-gray-color);
     font-weight: var();
@@ -182,13 +80,12 @@ body {
 .text-pagination {
     font-size: var(--size-s);
     position: absolute;
-    left: 80px;
     bottom: 0px;
-    left: 712px;
+    right: 0;
     width: max-content;
 }
 
-.section .heading {
+.section-item .heading {
     display: flex;
     align-self: flex-start;
     justify-content: center;
@@ -198,8 +95,9 @@ body {
     margin-top: 7px;
 }
 
-.section .heading .new-label {
+.new-label {
     background: var(--primary-yellow-color);
+    font-weight: var(--font-weight-normal);
     padding: 4px 9px;
     color: var(--white-color);
     font-size: var(--size-sm);
@@ -220,7 +118,7 @@ body {
 .divider-dashed {
     width: 100%;
     margin-bottom: 14px;
-    border-width: 10px; 
+    border-width: 10px;
     margin-top: 15px;
     border-bottom: 1px dashed var(--primary-blue-color);
 }
@@ -243,13 +141,11 @@ body {
     align-items: center;
     background: var(--primary-blue-color);
     color: var(--white-color);
-    padding: 7px 9px;
+    padding: 15px 9px;
     width: 258px;
-    height: 56px;
     cursor: pointer;
     column-gap: 5px;
 }
-
 
 .main-content-box .left-column .btn-common img {
     width: 19.21px;
@@ -259,12 +155,12 @@ body {
 }
 
 .main-content-box .left-column .btn-common p {
+    font-size: var(--size-sm);
+    font-weight: var(--font-weight-normal);
     line-height: 22.4px;
     margin-left: 6px;
     margin-top: 4px;
-
 }
-
 
 .main-content-box .left-column img {
     display: block;
@@ -284,12 +180,14 @@ body {
 }
 
 .right-column .item-product {
+    letter-spacing: 2px;
+    margin-left: 3px;
     border: 1px solid var(--primary-blue-color);
     border-radius: 5px;
     font-size: var(--size-s);
     font-weight: var(--font-weight-normal);
     color: var(--primary-blue-color);
-    padding: 4px 5px;
+    padding: 4px 2px;
     line-height: 16px;
 }
 
@@ -321,7 +219,6 @@ body {
 .option .btn-common.left {
     width: 250px;
     height: 32px;
-    padding: 7px 9px;
 }
 
 .option .btn-common.right {
@@ -330,15 +227,15 @@ body {
 }
 
 .option p {
-    font-size: var(--size-mm);
+    font-size: var(--size-sm);
     font-weight: var(--font-weight-normal);
-    line-height: 25.2px;
+    line-height: 22.4px;
     margin-right: 7px;
 }
 
 .sub-btn {
     width: 822px;
-    height: 67px;
+    padding: 3px;
     font-weight: var(--font-weight-normal);
     font-size: var(--size-sm);
     line-height: 22.4px;
@@ -351,10 +248,11 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--primary-gray-color);
-    margin: 1.4rem 0;
+    min-height: 474px;
     width: 1200px;
-    height: 474px;
-    margin-bottom: 32px;
+    padding: 177px 0;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .footer-section .sub-title {
@@ -368,7 +266,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 215px;  
+    height: 215px;
     background-color: var(--white-color);
     margin-top: 79px;
 }
@@ -396,7 +294,9 @@ body {
     left: 620px;
 }
 
-
-
-
-
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
