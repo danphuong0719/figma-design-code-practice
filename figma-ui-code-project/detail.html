@@ -20,17 +20,38 @@
 
         <div class="container">
             <div class="main-section">
-                <div class="arrow left-arrow">
-                    <img src="./assets/img/img-detail/arrow-left-circle.png" alt="Left Arrow">
-                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <img class="slide-img" src="./assets/img/img-detail/Rectangle 249.png" alt="Main Image"
+                                class="main-image">
+                            <div class="play-button">
+                                <img class="play-img" src="./assets/img/img-detail/play-circle.png" alt="">
+                            </div>
+                        </div>
 
-                <div class="main-image-wrapper">
-                    <img src="./assets/img/img-detail/Rectangle 249.png" alt="Main Image" class="main-image">
-                    <div class="play-button">
-                        <img src="./assets/img/img-detail/play-circle.png" alt="">
+                        <div class="slide">
+                            <img class="slide-img" src="./assets/img/img-detail/Rectangle 249.png" alt="Main Image"
+                                class="main-image">
+                            <div class="play-button">
+                                <img class="play-img" src="./assets/img/img-detail/play-circle.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img class="slide-img" src="./assets/img/img-detail/Rectangle 249.png" alt="Main Image"
+                                class="main-image">
+                            <div class="play-button">
+                                <img class="play-img" src="./assets/img/img-detail/play-circle.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="arrow right-arrow">
+
+                <div class="prev">
+                    <img src="./assets/img/img-detail/arrow-left-circle.png" alt="Left Arrow">
+                </div>
+                <div class="next">
                     <img src="./assets/img/img-detail/arrow-right-circle.png" alt="Right Arrow">
                 </div>
             </div>
@@ -204,6 +225,34 @@
         </div>
 
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            let currentSlide = 0;
+            const slides = $('.slide');
+            const totalSlides = slides.length;
+
+            $('.next').click(function () {
+                currentSlide = (currentSlide + 1) % totalSlides; 
+                showSlide(currentSlide);
+            });
+
+            $('.prev').click(function () {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+            });
+
+            function showSlide(index) {
+                $('.slider').css('transform', 'translateX(' + (-index * 100) + '%)');
+            }
+        });
+
+    </script>
 </body>
 
 </html>
